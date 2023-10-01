@@ -1,0 +1,603 @@
+<template>
+<div>
+    <div class="split left">
+        <div class="centered white__font">
+            <h3>
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                Follow your interests.
+            </h3>
+            <br>
+            <h3>
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                Hear what people are talking about.
+            </h3>
+            <br>
+            <h3>
+                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                Join the conversation.
+            </h3>
+        </div>
+    </div>
+        
+    <div class="split right">
+        <div class="container justify-content-center center">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="POST" action="#">
+    
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    <input id="email" type="email" placeholder="Phone,email, or username" class="" name="email" value="" required autofocus>
+    
+                                </div>
+                                <div class="col-md-4">
+                                    <input id="password" type="password" placeholder="Password" class="" name="password" required>
+    
+
+    
+                                    <a class="btn btn-link frgt__pswd__link" href="#">
+                                        Forgot Your Password?
+                                    </a>
+                                </div>
+    
+                                <div class="col-md-4 offset-md-4">
+                                    <button type="submit" class="btn btn-outline-warning white__btn">
+                                        Login
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="centered">
+            <h1><strong>See what’s happening in the world right now</strong></h1>
+            <br>
+            <br>
+            <h4><strong>Join Tweetier today.</strong></h4>
+            <a href="#">
+                <button type="button" class="btn btn-lg btn-block darkblue__btn">
+                    Signup
+                </button>
+            </a>
+            <br>
+            <a href="#">
+                <button type="button" class="btn btn-lg btn-block white__btn">
+                    Login
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer__container">
+        <div class="row">
+            <div class="">
+                <ul class="footer__list">
+                    <li>About</li>
+                    <li>Jobs</li>
+                    <li>Terms</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>Advertise</li>
+                    <li>Marketing</li>
+                    <li>Businesses</li>
+                    <li>Developers</li>
+                    <li>Directory</li>
+                    <li>Settings</li>
+                    <li>
+                        <small>© 2018 Tweetier  </small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+                'test' : 'Hello from america',
+            }
+        },
+        mounted() {
+            console.log('Component mounted.')
+        }
+    }
+</script>
+
+<style>
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== 
+*/
+
+.py-4 {
+    padding-top: 55px;
+}
+
+.home__container {
+    padding-top: 10px;
+}
+
+.panel-info>.panel-heading {
+    background-image: none;
+    background-color: #e6e6ff;
+}
+
+.nav-pills-custom>li>a:focus,
+.nav-pills-custom>li>a:hover {
+    background: none;
+    color: grey;
+}
+
+.panel-custom>.panel-heading {
+    background: none;
+    border-bottom: none;
+}
+
+.form-control-nav {
+    background-color: #F0FFFF;
+    border: lightgrey solid 1px;
+    border-radius: 15px;
+}
+
+body {
+    background-color: #F0FFFF;
+}
+
+.panel-footer {
+    background-color: #e6e6ff;
+}
+
+.well {
+    background-image: none;
+    background-color: #e6e6ff;
+}
+
+a {
+    color: #000;
+}
+
+div.panel-heading {
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.form-control-feedback {
+    line-height: 27px;
+}
+
+.panel-info {
+    border: 1px lightgrey solid;
+}
+
+
+/* 
+* Custom Styles
+*/
+
+
+/* Login Page */
+
+
+/* Split the screen in half */
+
+.split {
+    height: 95%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+/* Control the left side */
+
+.left {
+    left: 0;
+    background-color: #0d0d26;
+}
+
+
+/* Control the right side */
+
+.right {
+    right: 0;
+    background-color: #fff;
+}
+
+.frgt__pswd__link {
+    color: #999999;
+}
+
+.frgt__pswd__link:hover {
+    color: #999999;
+}
+
+.darkblue__btn {
+    border-radius: 20px;
+    background-color: #0d0d26;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.darkblue__btn:hover {
+    background-color: #0d0d26;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.white__btn {
+    border-radius: 20px;
+    background-color: #fff;
+    color: #0d0d26;
+    border: 2px solid #0d0d26;
+    border-radius: 20px;
+}
+
+.white__btn:hover {
+    background-color: #e6e6ff;
+    color: #0d0d26;
+    border: 2px solid #0d0d26;
+    border-radius: 20px;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+
+/* Footer Styling */
+
+.footer__container {
+    height: 5%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.footer__list {
+    text-align: center;
+}
+
+.footer__list>li {
+    margin-top: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    color: #cccccc;
+}
+
+
+/* Navbar Styling*/
+
+.navbar-right {
+    height: 40px;
+}
+
+.nav__searchbar {
+    float: left;
+    margin-top: 5px;
+}
+
+.nav__dropdown {
+    display: inline-block;
+    float: left;
+    width: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.white__hover>li>a:hover {
+    background-color: #0d0d26;
+    border-bottom: 5px solid #fff;
+}
+
+
+/* App Grid Styling */
+
+
+/* Profile Panel Styling */
+
+.twPc-div {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    height: 200px;
+    max-width: 340px;
+    margin-bottom: 20px;
+}
+
+.twPc-bg {
+    background-image: url("https://pbs.twimg.com/profile_banners/50988711/1384539792/600x200");
+    background-position: 0 50%;
+    background-size: 100% auto;
+    border-bottom: 1px solid #e1e8ed;
+    border-radius: 4px 4px 0 0;
+    height: 95px;
+    width: 100%;
+}
+
+.twPc-block {
+    display: block !important;
+}
+
+.twPc-button {
+    margin: -35px -10px 0;
+    text-align: right;
+    width: 100%;
+}
+
+.twPc-avatarLink {
+    background-color: #fff;
+    border-radius: 6px;
+    display: inline-block !important;
+    float: left;
+    margin: -30px 5px 0 8px;
+    max-width: 100%;
+    padding: 1px;
+    vertical-align: bottom;
+}
+
+.twPc-avatarImg {
+    border: 2px solid #fff;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #fff;
+    height: 72px;
+    width: 72px;
+}
+
+.twPc-divUser {
+    margin: 5px 0 0;
+}
+
+.twPc-divName {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.twPc-divName a {
+    color: inherit !important;
+}
+
+.twPc-divStats {
+    margin-left: 11px;
+    padding: 10px 0;
+}
+
+.twPc-Arrange {
+    box-sizing: border-box;
+    display: table;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    table-layout: auto;
+}
+
+ul.twPc-Arrange {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.twPc-ArrangeSizeFit {
+    display: table-cell;
+    padding: 0;
+    vertical-align: top;
+}
+
+.twPc-ArrangeSizeFit a:hover {
+    text-decoration: none;
+}
+
+.twPc-StatValue {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.15s ease-in-out 0s;
+}
+
+.twPc-StatLabel {
+    color: #8899a6;
+    font-size: 10px;
+    letter-spacing: 0.02em;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: color 0.15s ease-in-out 0s;
+}
+
+.profile__img {
+    border-radius: 45px;
+}
+
+.search-field {
+    padding-left: 10px;
+}
+
+.tweet_button {
+    border-radius: 40px;
+    width: 70px;
+    color: #000;
+    /*background-color: #1DA1F2;*/
+}
+
+
+/* Left Panel */
+
+.cover__photo {
+    margin-top: 0;
+}
+
+
+/* Newsfeed Panel */
+
+.tweet__input {
+    width: 100%;
+}
+
+.user__tweet__glyphicons {
+    color: #0d0d26;
+}
+
+.user__tweet__glyphicons>li>a {
+    color: #0d0d26;
+}
+
+.tweet__glyphicons>li>a {
+    color: #999999;
+}
+
+
+/* ==========================================================================
+   Colors' styles
+   ========================================================================== 
+*/
+
+
+/* DarkBlue Colors */
+
+.darkblue__btn {
+    background-image: none;
+    background-color: #0d0d26;
+    color: #fff;
+}
+
+.darkblue__btn:hover {
+    background-image: none;
+    background-color: #2b2b33;
+    color: #fff;
+}
+
+.darkblue__font {
+    color: #0d0d26;
+}
+
+.darkblue__font>li>a {
+    color: #0d0d26;
+}
+
+.darkblue__backgrnd {
+    background-color: #0d0d26;
+}
+
+.light__darkblue__backgrnd {
+    background-color: #ffe699;
+}
+
+
+/* White Colors */
+
+.white__font {
+    color: #FFF;
+}
+
+.white__font>h3 {
+    color: #FFF;
+}
+
+.white__font>li>a {
+    color: #FFF;
+}
+
+.white__backgrnd {
+    background-color: #FFF;
+}
+
+.dark__creamy__backgrnd {
+    background-color: #e6e6ff;
+}
+
+.creamy__backgrnd {
+    background-color: #f2f2f2;
+}
+
+
+/* Black Colors */
+
+.black__font>li>a {
+    color: #000;
+}
+
+.black__background {
+    background-color: #000;
+}
+
+
+/* Grey Colors */
+
+.grey__font {
+    color: #999999;
+}
+
+.grey__font>li>a {
+    color: #999999;
+}
+
+.grey__bot__brdr {
+    border-bottom: 0.1px solid #cccccc;
+}
+
+
+/* ==========================================================================
+   Margins
+   ========================================================================== 
+*/
+
+.margin__auto {
+    margin: auto;
+}
+
+
+/* ==========================================================================
+   Font Weigths 
+   ========================================================================== 
+*/
+
+.bold {
+    font-weight: bold;
+}
+
+.header__img__container {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile__name__label {
+    margin-top: 9px;
+}
+
+.profile__name__label>a {
+    color: #fff;
+    margin: auto;
+}
+
+.profile__name__label>a:hover {
+    text-decoration: none;
+}
+</style>
